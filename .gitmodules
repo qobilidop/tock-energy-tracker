@@ -1,0 +1,4 @@
+[submodule "tock"]
+	path = tock
+	url = git@github.com:JFHwang/tock.git
+	branch = energy-tracker
