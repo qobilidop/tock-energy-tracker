@@ -10,18 +10,26 @@ setup:
 fmt:
 	$(MAKE) -C tock/ fmt
 
-.PHONY: flash-board
-flash-board:
+.PHONY: board-build
+board-build:
+	$(MAKE) -C tock/boards/nordic/nrf52840dk/
+
+.PHONY: board-install
+board-install:
 	$(MAKE) -C tock/boards/nordic/nrf52840dk/ install
 
-.PHONY: build-app
-build-app:
+.PHONY: app-build
+app-build:
 	cd libtock-c/examples && ./build_all.sh
 
-.PHONY: install-app
-install-app:
+.PHONY: app-install
+app-install:
 	tockloader install --board nrf52dk --jlink libtock-c/examples/blink/build/blink.tab
 
-.PHONY: uninstall-app
-uninstall-app:
+.PHONY: app-uninstall
+app-uninstall:
 	tockloader uninstall --board nrf52dk --jlink
+
+.PHONY: listen
+listen:
+	tockloader listen
