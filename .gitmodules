@@ -3,5 +3,8 @@
 	url = git@github.com:tock/libtock-c.git
 [submodule "tock"]
 	path = extern/tock
+	url = https://github.com/tock/tock.git
+[submodule "tock-et"]
+	path = extern/tock-et
 	url = git@github.com:JFHwang/tock.git
 	branch = energy-tracker
