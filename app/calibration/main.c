@@ -6,7 +6,7 @@ int main(void) {
   int err = led_count(&num_leds);
   if (err < 0) return err;
 
-  // Wait for 10s before starting the calibration
+  // Wait for 10s before start
   delay_ms(10000);
 
   for (int i = 0; i < num_leds; i++) {
