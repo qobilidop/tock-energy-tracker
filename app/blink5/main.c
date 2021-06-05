@@ -8,11 +8,11 @@ int main(void) {
   delay_ms(10000);
 
   // Turn the LED on and off
-  for (int count = 0; count < 5; count++) {
+  for (int count = 0; count < 3; count++) {
     led_on(i_led);
-    delay_ms(3000);
+    delay_ms(5000);
     led_off(i_led);
-    delay_ms(3000);
+    delay_ms(5000);
   }
 
   led_off(i_led);
