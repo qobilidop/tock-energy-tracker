@@ -2,16 +2,15 @@
 #include <timer.h>
 
 int main(void) {
-  int i_led = 3;
+  int i_led = 2;
 
-  // Wait for 5s before start
-  delay_ms(5000);
+  // Wait for some time before start
+  delay_ms(10000);
 
+  // Turn the LED on and off
   for (int i = 0; i < 10; i++) {
-    // Turn the ith LED on for 1s
     led_on(i_led);
     delay_ms(1000);
-    // Turn the ith LED off for 1s
     led_off(i_led);
     delay_ms(1000);
   }
