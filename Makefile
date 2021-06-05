@@ -8,27 +8,15 @@ setup:
 
 .PHONY: fmt
 fmt:
-	$(MAKE) -C tock/ fmt
+	$(MAKE) -C extern/tock-et/ fmt
 
-.PHONY: board-build
-board-build:
-	$(MAKE) -C tock/boards/nordic/nrf52840dk/
+.PHONY: test-build
+test-build:
+	$(MAKE) -C extern/tock-et/boards/nordic/nrf52840dk/
 
-.PHONY: board-install
-board-install:
-	$(MAKE) -C tock/boards/nordic/nrf52840dk/ install
-
-.PHONY: app-build
-app-build:
-	cd libtock-c/examples && ./build_all.sh
-
-.PHONY: app-install
-app-install:
-	tockloader install --board nrf52dk --jlink libtock-c/examples/blink/build/blink.tab
-
-.PHONY: app-uninstall
-app-uninstall:
-	tockloader uninstall --board nrf52dk --jlink
+.PHONY: test-install
+test-install:
+	$(MAKE) -C extern/tock-et/boards/nordic/nrf52840dk/ install
 
 .PHONY: listen
 listen:

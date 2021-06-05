@@ -6,15 +6,23 @@ int main(void) {
   int err = led_count(&num_leds);
   if (err < 0) return err;
 
-  // Wait for 10s before start
+  // Wait for some time before start
   delay_ms(10000);
 
+  // Turn each LED on and off
   for (int i = 0; i < num_leds; i++) {
-    // Turn the ith LED on for 5s
     led_on(i);
-    delay_ms(5000);
-    // Turn the ith LED off for 5s
+    delay_ms(10000);
     led_off(i);
-    delay_ms(5000);
+    delay_ms(10000);
+  }
+
+  // Turn all LEDs on and off
+  for (int i = 0; i < num_leds; i++) {
+    led_on(i);
+  }
+  delay_ms(10000);
+  for (int i = 0; i < num_leds; i++) {
+    led_off(i);
   }
 }
