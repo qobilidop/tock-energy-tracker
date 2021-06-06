@@ -7,7 +7,7 @@ int main(void) {
   if (err < 0) return err;
 
   // Wait for some time before start
-  delay_ms(10000);
+  delay_ms(15000);
 
   // Turn each LED on and off
   for (int i = 0; i < num_leds; i++) {

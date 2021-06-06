@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-TOCK="tock" \
+TOCK="tock-base" \
 APPS="timing" \
 ./common.sh

@@ -5,7 +5,7 @@ int main(void) {
   int i_led = 1;
 
   // Wait for some time before start
-  delay_ms(10000);
+  delay_ms(15000);
 
   // Turn the LED on and off
   for (int i = 0; i < 10; i++) {

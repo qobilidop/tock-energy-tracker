@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-TOCK="tock-et" \
+TOCK="tock-tet" \
 APPS="calibration" \
 ./common.sh

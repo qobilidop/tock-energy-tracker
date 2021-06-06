@@ -11,7 +11,7 @@ int main(void) {
   if (err < 0) return err;
 
   // Wait for some time before start.
-  delay_ms(10000);
+  delay_ms(15000);
 
   // Start timing.
   uint32_t t_start;
