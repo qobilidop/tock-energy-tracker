@@ -1,10 +1,15 @@
 [submodule "libtock-c"]
 	path = extern/libtock-c
 	url = git@github.com:tock/libtock-c.git
-[submodule "tock"]
-	path = extern/tock
-	url = https://github.com/tock/tock.git
-[submodule "tock-et"]
-	path = extern/tock-et
+[submodule "tock-base"]
+	path = extern/tock-base
+	url = git@github.com:JFHwang/tock.git
+	branch = energy-tracker-base
+[submodule "tock-orig"]
+	path = extern/tock-orig
+	url = git@github.com:JFHwang/tock.git
+	branch = energy-tracker-orig
+[submodule "tock-tet"]
+	path = extern/tock-tet
 	url = git@github.com:JFHwang/tock.git
 	branch = energy-tracker
