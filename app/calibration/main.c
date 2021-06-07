@@ -12,16 +12,16 @@ int main(void) {
   // Turn each LED on and off
   for (int i = 0; i < num_leds; i++) {
     led_on(i);
-    delay_ms(10000);
+    delay_ms(5000);
     led_off(i);
-    delay_ms(10000);
+    delay_ms(5000);
   }
 
   // Turn all LEDs on and off
   for (int i = 0; i < num_leds; i++) {
     led_on(i);
   }
-  delay_ms(10000);
+  delay_ms(5000);
   for (int i = 0; i < num_leds; i++) {
     led_off(i);
   }
