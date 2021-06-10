@@ -6,13 +6,17 @@ help:
 fmt:
 	$(MAKE) -C extern/tock-tet/ fmt
 
-.PHONY: test-build
-test-build:
-	$(MAKE) -C extern/tock-tet/boards/nordic/nrf52840dk/
+.PHONY: build-orig
+build-orig:
+	$(MAKE) -C extern/tock-orig/boards/nordic/nrf52840dk/
 
-.PHONY: test-install
-test-install:
-	$(MAKE) -C extern/tock-tet/boards/nordic/nrf52840dk/ install
+.PHONY: build-base
+build-base:
+	$(MAKE) -C extern/tock-base/boards/nordic/nrf52840dk/
+
+.PHONY: build-tet
+build-tet:
+	$(MAKE) -C extern/tock-tet/boards/nordic/nrf52840dk/
 
 .PHONY: listen
 listen:
