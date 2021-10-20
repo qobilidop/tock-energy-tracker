@@ -1,5 +1,5 @@
 # TET: A Proof-of-Concept Tock Energy Tracker
-TET (Tock Energy Tracker) is built as a [course](https://patpannuto.com/classes/2021/spring/cse291/) project for [Tock](https://www.tockos.org/) to track energy consumption of individual board components and concurrently running apps.
+TET (Tock Energy Tracker) is built as a [course](https://patpannuto.com/classes/2021/spring/cse291/) project for [Tock](https://www.tockos.org/) to track energy consumption of individual board components and concurrently running apps. See our [final report](final-report.pdf).
 
 This repo holds the experiments for this project. The actual TET implementation is hosted in [another repo](https://github.com/JFHwang/tock/tree/energy-tracker). The code to make figures for the report and other data analysis is contained in [analysis.ipynb](analysis.ipynb).
 
